@@ -11,50 +11,100 @@
     padding: 2rem;
 } */
 
-nav ul li{
-    display: inline-block;    
-}
 
-header{
-    display: flex;
-    justify-content: flex-end;
+nav{
     background-color: darkred;
     padding: 2rem;
 }
 
+.inicio{
+    display: flex;
+    padding: 1rem;
+    background-color: black;
+    justify-content: center;
+}
 
-.logo{
-    cursor: pointer;
-    margin-right: auto;
-    top: 1rem;
-    height: 80px;
-    width: 60px;
+.inicioPie{
+    display: flex;
+    padding: 1rem;
+    background-color: black;
+    justify-content: center;
+}
+
+.navBar{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
 }
 
 .navBar li{
-    margin: 0 10px;
+    margin: 0 5px;
+}
+
+.logo{
+    cursor: pointer;
+    top: 1rem;
 }
 
 ul li{
     list-style: none;   
 }
 
-nav ul li a{
+a{
     text-decoration: none;
     color: rgb(221, 224, 18);
-    font-size: 25px;
+    font-size: 20px;
 }
 
 body{
     background-color: goldenrod;
 }
 
+.header{
+    display: grid;
+    grid-area: header;
+}
+.footer{
+    display: grid;
+    grid-area: footer;
+}
+.main{
+    grid-area: main;
+}
+
+
+.body{
+    display: grid;
+    height: fit-content;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer" 
+}
+
+.main{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    height: 1800px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.sectionMain{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    justify-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
 .sub{
     color: goldenrod;
     font-style: italic;
-    margin-left: 200px;
-    margin-right: 950px;
-    margin-top: 20px;
     padding: 30px;
     border: 5px solid black;
     background-color: darkred;
@@ -64,73 +114,112 @@ body{
 .sub1{
     color: darkred;
     font-style: inherit;
-    margin-left: 200px;
-    margin-right: 960px;
-    margin-top: 20px;
     padding: 30px;
-    border: 5px solid black;
-    background-color: goldenrod;
+    border: 5px solid darkred;
+    background-color: black;
 }
 
 .sub2{
-    color: black;
-    font-style: oblique;
-    margin-left: 200px;
-    margin-right: 950px;
-    margin-top: 20px;
+    color:black;
+    font-style: italic;
     padding: 30px;
     border: 5px solid black;
     background-color: darkred;
 }
 
-
-
-footer{
-    background-color: darkred;
-    height: auto;
-    margin-top: 50px;
-}
-
-#esencia{
+.esencia{
     color: gold;
     background-color: red;
-    padding: 110px;  
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 300px;
-    margin-right: 600px;
+    padding: 80px;  
     border-style: dashed;
     border-color: gold;
-    
-}
+    justify-items: center;
+    margin: 10px;
+    text-transform: uppercase;
+} 
 
 .lema{
     color: black;
     background-color: red;
     padding: 20px;
-    margin-top: 10px;
-    margin-right: 600px;
-    margin-left: 300px;
     border: 2px solid black;
 }
 
-/* img{
-    margin-top: 10px;
-    margin-left: 150px;
-    border-radius: 15px;
+.imagenBirra{
+    height: 380px;
+    width: 230px;
     border: black double;
-} */
+    margin-top: 15px;
+}
 
-.videoProceso{
-    font-style: arial;
-    padding: 20px;
+.footer{
+    display: flex;
+    align-items: center;
+    background-color: darkred;
+    flex-direction: column;
+}
+
+@media screen and (min-width:768px){
+
+    .inicio{
+        background-color: darkred;
+        padding: 0px;
+        margin-top: 16px;
+        margin-left: 16px;
+        position: absolute;
+    }
+
+    .inicioPie{
+        display:none;
+    }
     
-}
+    .navBar{
+        display: flex;
+        justify-content: flex-end;
+        text-transform: uppercase;
+    }
 
-h3{
-    padding: 10px;
-}
+    .body{
+        display: grid;
+        height: fit-content;
+        gap: 20px;
+    }
 
-.pie{
-    margin-left: 5px;
-}
+    .main{
+        display: grid;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .birraRubia{
+        grid-area: birraRubia;
+    }
+    .birraRoja{
+        grid-area: birraRoja;
+    }
+    .birraNegra{
+        grid-area: birraNegra;
+    }
+
+    .sectionMain{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "birraRubia birraRoja birraNegra";
+        justify-content: center;
+        justify-items: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .footer{
+        display: flex;
+        align-items: center;
+        background-color: darkred;
+        flex-direction: column;
+    }
+
+} 
