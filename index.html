@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="estilos/style.css">
     <title>La birra de Pompeya</title>
 </head>
@@ -32,22 +34,22 @@
     
     <div class="main"> 
         <main>            
-            <div class="esencia"><h1>Esencia</h1></div>
-            <div class="lema"><p>Republica socialista y de organizacion horizontal fabricante de cervezas.</p></div>
+            <div data-aos="flip-up" class="esencia"><h1>Esencia</h1></div>
+            <div data-aos="fade-down" class="lema"><p>Republica socialista y de organizacion horizontal fabricante de cervezas.</p></div>
             <div class="sectionMain">
                 <div class="birraRubia">
-                    <h2 class="sub">Birra Rubia</h2>
-                    <img class="imagenBirra" src="./img/birra rubia.jpg" alt="">
+                    <h2 data-aos="zoom-in-up" class="sub">Birra Rubia</h2>
+                    <img data-aos="zoom-in-down" class="imagenBirra" src="./img/birra rubia.jpg" alt="">
                 </div>
                     
                 <div class="birraRoja">
-                    <h2 class="sub1">Birra Roja</h2>
-                    <img class="imagenBirra" src="./img/birra roja.jpg" alt="">
+                    <h2 data-aos="zoom-in-up" class="sub1">Birra Roja</h2>
+                    <img data-aos="zoom-in-down" class="imagenBirra" src="./img/birra roja.jpg" alt="">
                 </div>
                     
                 <div class="birraNegra">
-                    <h2 class="sub2">Birra Negra</h2>
-                    <img class="imagenBirra" src="./img/birra negra.jpg" alt="">
+                    <h2 data-aos="zoom-in-up" class="sub2">Birra Negra</h2>
+                    <img data-aos="zoom-in-down" class="imagenBirra" src="./img/birra negra.jpg" alt="">
                 </div>
             </div>
         </main>
@@ -68,5 +70,10 @@
         </a>
     </div>    
 </div>
+
+<script>
+    AOS.init();
+</script>
+
 </body>
 </html>
