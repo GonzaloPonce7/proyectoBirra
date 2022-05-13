@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/style.css">
     <title>Nuestras Birras</title>
     
@@ -35,7 +38,7 @@
         <div class="laRubia">
             <h2>Rubia:</h2>
             <h3>Lejanas Tierras</h3>
-            <img class="imagenBirra" src="../img/birra rubia.jpg" alt="">
+            <img data-aos="fade-up" data-aos-duration="3000" class="imagenBirra" src="../img/birra rubia.jpg" alt="">
         </div>
         <div class="descripcionTierras">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora eligendi ullam reiciendis, sit a perferendis nisi harum eveniet voluptas, autem illum quod laudantium, aliquam nihil sed quis ipsam eos totam.</p>
@@ -44,7 +47,7 @@
         <div class="laRoja">
             <h2>Roja:</h2>
             <h3>Drago</h3>
-            <img class="imagenBirra" src="../img/birra roja.jpg" alt="">
+            <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="imagenBirra" src="../img/birra roja.jpg" alt="">
         </div>
         <div class="descripcionDrago">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quisquam iusto fugiat pariatur, velit quia ullam voluptates optio obcaecati facere quos id quasi tempore consequatur, quaerat consequuntur eos et! Nobis!</p>
@@ -53,7 +56,7 @@
         <div class="laNegra">
             <h2>Negra:</h2>
             <h3>Larry Guaits</h3>
-            <img class="imagenBirra" src="../img/birra negra.jpg" alt="">
+            <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="imagenBirra" src="../img/birra negra.jpg" alt="">
         </div>
         <div class="descripcionLarry">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae asperiores itaque excepturi ducimus officiis nisi consectetur, culpa voluptatum voluptates saepe maiores commodi laudantium alias numquam iure! Saepe obcaecati delectus officiis.</p>
@@ -80,6 +83,11 @@
         </a>
     </div>    
 
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     
 </body>
 </html>
