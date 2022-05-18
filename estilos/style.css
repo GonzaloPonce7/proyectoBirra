@@ -17,6 +17,10 @@
     padding: 2rem;
 } */
 
+.carousel-inner img{
+    max-height: 900px;
+
+}
 .inicio{
     display: flex;
     padding: 1rem;
@@ -52,7 +56,7 @@ ul li{
 
 a{
     text-decoration: none;
-    color: rgb(221, 224, 18);
+    /* color: rgb(221, 224, 18); */
     font-size: 20px;
 }
 
@@ -166,6 +170,14 @@ body{
     align-items: center;
     background-color: darkred;
     flex-direction: column;
+}
+
+.redes a i{
+    color: crimson;
+}
+
+.redes a i:hover{
+    color: cyan;
 }
 
 @media screen and (min-width:768px){
