@@ -144,7 +144,7 @@ body{
     color: gold;
     background-color: red;
     padding: 80px;  
-    border-style: dashed;
+    border-style: groove;
     border-color: gold;
     justify-items: center;
     margin: 10px;
@@ -182,13 +182,13 @@ body{
 
 @media screen and (min-width:768px){
 
-    .inicio{
+    /* .inicio{
         background-color: darkred;
         padding: 0px;
         margin-top: 16px;
         margin-left: 16px;
         position: absolute;
-    }
+    } */
 
     .inicioPie{
         display:none;
@@ -246,11 +246,67 @@ body{
         margin-top: 15px;
     }
 
-    .footer{
+    /* .footer{
         display: flex;
         align-items: center;
         background-color: darkred;
         flex-direction: column;
-    }
+    } */
 
 } 
+
+@media (min-width: 1024px) {
+    body{
+        background-color: rgb(50, 201, 70);
+        font-size: large;
+        
+    }
+
+    .logoMain{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "esencia lema";
+    }
+
+    .sectionMain{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "birraRubia birraRoja birraNegra";
+        justify-content: center;
+        justify-items: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .imagenBirra{
+        height: 50vw;
+        width: 30vw;
+        border: black;
+        margin-top: 15px;
+    }
+
+    .lema{
+        color: black;
+        background-color: red;
+        height: auto;
+        border: 2px solid black;
+        margin: 10px;
+        padding: 80px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .esencia{
+        color: gold;
+        background-color: red;
+        height: auto;  
+        border-style: groove;
+        border-color: gold;
+        justify-items: center;
+        margin: 10px;
+        text-transform: uppercase;
+    } 
+}
