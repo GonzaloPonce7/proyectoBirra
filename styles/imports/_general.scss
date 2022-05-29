@@ -1,0 +1,124 @@
+*{  
+    box-sizing: border-box;
+    padding: 0%;
+    margin:0%
+}
+
+body{
+    background-color: goldenrod;
+}
+
+
+// header{
+//     background-color: darkred;
+//     padding: 2rem;
+//     .inicio{
+//         display: flex;
+//         padding: 1rem;
+//         background-color: black;
+//         justify-content: center;
+//         .logo{
+//             cursor: pointer;
+//             top: 1rem;
+//         }
+//     }
+//     .navBar{
+//         display: flex;
+//         justify-content: center;
+//         text-transform: uppercase;
+//         margin: 0 auto;
+//         li{
+//             list-style: none;
+//             margin: 0 5px;
+//             a{
+//                 text-decoration: none;
+//                 color: rgb(221, 224, 18); 
+//                 font-size: 20px; 
+//             }
+//         }
+//     }
+// } 
+
+.header{
+    display: grid;
+    grid-area: header;
+}
+.footer{
+    display: grid;
+    grid-area: footer;
+}
+.main{
+    grid-area: main;
+}
+
+// .footer{
+//     display: flex;
+//     align-items: center;
+//     background-color: darkred;
+//     flex-direction: column;
+// }
+
+// .inicioPie{
+//     display: flex;
+//     padding: 1rem;
+//     background-color: black;
+//     justify-content: center;
+// }
+
+.redes {
+    i{
+        color: crimson;
+        &:hover{
+            color: cyan;
+        }
+    }
+} 
+
+
+@media screen and (min-width:768px){
+
+    /* .inicio{
+        background-color: darkred;
+        padding: 0px;
+        margin-top: 16px;
+        margin-left: 16px;
+        position: absolute;
+    } */
+
+    // .inicioPie{
+    //     display:none;
+    // }
+    
+    // .navBar{
+    //     display: flex;
+    //     justify-content: flex-end;
+    //     text-transform: uppercase;
+    // }
+
+        /* .footer{
+        display: flex;
+        align-items: center;
+        background-color: darkred;
+        flex-direction: column;
+    } */
+
+    .birraRubia{
+        grid-area: birraRubia;
+    }
+    .birraRoja{
+        grid-area: birraRoja;
+    }
+    .birraNegra{
+        grid-area: birraNegra;
+    }
+
+} 
+
+
+@media (min-width: 1024px) {
+    body{
+        background-color: $fondo;
+        font-size: large;
+        
+    }
+}
