@@ -17,28 +17,31 @@
 <body>
 <div class="body">
 
-    <nav class="navbar navbar-expand-md navbar-light bg-dark" style="width: auto;">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">
+    <nav  class="navbar navbar-expand-md" style="width: auto;">
+        <div class="container-fluid">
+          <a class="navbar-brand d-lg-none d-md-none" href="index.html">
               <img src="./img/Escencia01.png" class="mh-100" alt="" style="width:80px; height: 90px;">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav align-items-end">
-              <li class="nav-item">
-                <a class="nav-link active text-danger" href="./secciones/tienda.html">Tienda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-danger" href="./secciones/nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-danger" href="./secciones/contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-warning" href="./secciones/cervezas.html">Cervezas</a>
-              </li>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="./secciones/tienda.html">Tienda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./secciones/nosotros.html">Nosotros</a>
+                </li>
+                <a class="navbar-brand d-none d-md-block d-lg-block" href="index.html">
+                  <img src="./img/Escencia01.png" class="mh-100" alt="" style="width:80px; height: 90px;">
+                </a>
+                <li class="nav-item">
+                  <a class="nav-link" href="./secciones/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./secciones/cervezas.html">Cervezas</a>
+                </li>
             </ul>
           </div>
         </div>
@@ -48,8 +51,8 @@
         <main> 
             <div class="logoMain">
                 <div data-aos="flip-up" class="esencia"><h1 class="display-3 mt-3">Esencia</h1></div>
-                <div data-aos="fade-down" class="lema"><p>Republica socialista y de organizacion horizontal fabricante de cervezas.</p></div>
-            </div>           
+                <div data-aos="fade-down" class="lema"><p class="display-8 mt-3">Republica socialista y de organizacion horizontal fabricante de cervezas.</p></div>
+            </div> 
             <div class="sectionMain">
                 <div class="birraRubia">
                     <h2 data-aos="zoom-in-up" class="sub">Birra Rubia</h2>
@@ -69,51 +72,42 @@
         </main>
     </div>
     
-    <footer class="bg-dark text-danger text-center footer">
-        <p class="fs-3 fw-bold mb-0">Horarios labolares:</p>
-        <span class="">Cuando nos pinta</span>
-        <p class="fs-3 fw-bold mb-0">Ubicacion:</p>
-        <span class="">Barrio de Nueva Pompeya</span>
-        <p class="fs-4 mb-0">Cerveza Esencia - Todos los derechos reservados</p> 
-        <div class="redes">
+    <footer class="site-footer py-4">
+      <div class="container">
+        <div class="row">
+          <ul class="list-unstyled py-4 col-sm-6 col-12 d-flex flex-column justify-content-center align-items-center">
+            <li class="nav-item m-1">
+              <a class="link h5" href="./secciones/tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item m-1">
+              <a class="link h5" href="./secciones/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item m-1">
+              <a class="link h5" href="./secciones/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item m-1">
+              <a class="link h5" href="./secciones/cervezas.html">Cervezas</a>
+            </li>
+            <li class="nav-item m-1">
+              <a class="link h5" href="index.html">Inicio</a>
+            </li>
+          </ul>
+          <div class="container py-4 col-6 col-xs-12 d-flex flex-column justify-content-center align-items-center text-center">
+            <p class="h4 text-center"><u class="m-1">Horarios labolares:</u></p>
+            <p class="m-1 h5">Cuando nos pinta</p>
+            <p class="h4 text-center"><u class="m-1">Ubicacion:</u></p>
+            <p class="m-1 h5">Barrio de Nueva Pompeya</p>
+          </div>
+        </div>
+        <div class="redes container d-flex flex-row col-12 col-sm-6 mt-1">
+          <p class="m-1">Cerveza Esencia - Todos los derechos reservados</p>
           <a href=""><img class="imgRedes" src="./img/whatsapp.png" alt="whatsapp"></a>
           <a href=""><img class="imgRedes" src="./img/instagram.png" alt="instagram"></a>
           <a href=""><img class="imgRedes" src="./img/facebook.png" alt="facebook"></a>
         </div>
+      </div> 
     </footer>
 
-    <!-- <div class="header">
-        <header>
-            <div class="inicio">
-                <a href="index.html">
-                <img class="logo" src="./img/Escencia01.png" alt="" height="60" width="57">
-            </a>
-            </div>
-            <nav>
-                <ul class="navBar">
-                    <li><a href="./secciones/cervezas.html">Cervezas</a></li>
-                    <li><a href="./secciones/tienda.html">Tienda</a></li>
-                    <li><a href="./secciones/nosotros.html">Nosotros</a></li>
-                    <li><a href="./secciones/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div> -->
-
-    <!-- <footer>
-        <div class="footer">
-            <h3>Horarios labolares:</h3>
-            <span class="pie">Cuando nos pinta</span>
-            <h3>Ubicacion:</h3>
-            <span class="pie">Barrio de Nueva Pompeya</span>
-            <p class="pie">Cerveza Esencia - Todos los derechos reservados</p>
-        </div>
-    </footer>
-    <div class="inicioPie">
-        <a href="index.html">
-        <img class="logo" src="./img/Escencia01.png" alt="" height="60" width="57">
-        </a>
-    </div>     -->
 </div>
 
 <script>

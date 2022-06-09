@@ -13,38 +13,41 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-light bg-dark" style="width: auto;">
-        <div class="container">
-          <a class="navbar-brand" href="../index.html">
+  <nav  class="navbar navbar-expand-md" style="width: auto;">
+    <div class="container-fluid">
+      <a class="navbar-brand d-lg-none d-md-none" href="../index.html">
+          <img src="../img/Escencia01.png" class="mh-100" alt="" style="width:80px; height: 90px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <a class="navbar-brand d-none d-md-block d-lg-block" href="../index.html">
               <img src="../img/Escencia01.png" class="mh-100" alt="" style="width:80px; height: 90px;">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav align-items-end">
-              <li class="nav-item">
-                <a class="nav-link active text-danger" href="tienda.html">Tienda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-danger" href="nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-danger" href="contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-warning" href="cervezas.html">Cervezas</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+            </a>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cervezas.html">Cervezas</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+</nav>
 
     <section class="container">
       <h1 class="display-3 mt-3" >Contacto</h1>
     </section>
 
-    <div class="container">
+    <div class="container py-4">
       <div class="row g-3 mb-3">
         <div class="col-lg-6 col-sm-12 col-sm-12 col-md-6">
           <input type="text" class="form-control" placeholder="Nombre" autocomplete="name" aria-label="Fist name">
@@ -75,112 +78,41 @@
     </div>
       
 
-    <footer class="bg-dark text-danger text-center footer mt-3">
-      <p class="fs-3 fw-bold mb-0">Horarios labolares:</p>
-      <span class="">Cuando nos pinta</span>
-      <p class="fs-3 fw-bold mb-0">Ubicacion:</p>
-      <span class="">Barrio de Nueva Pompeya</span>
-      <p class="fs-4 mb-0">Cerveza Esencia - Todos los derechos reservados</p> 
-      <div class="redes">
-        <a href=""><img src="../img/whatsapp.png" alt="whatsapp"></a>
-        <a href=""><img src="../img/instagram.png" alt="instagram"></a>
-        <a href=""><img src="../img/facebook.png" alt="facebook"></a>
-      </div>
+    <footer class="site-footer py-4">
+      <div class="container">
+        <div class="row">
+          <ul class="list-unstyled py-4 col-sm-6 col-12 d-flex flex-column justify-content-center align-items-center">
+            <li class="nav-item m-1">
+              <a class="link h5" href="tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item m-1">
+              <a class="link h5" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item m-1">
+              <a class="link h5" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item m-1">
+              <a class="link h5" href="cervezas.html">Cervezas</a>
+            </li>
+            <li class="nav-item m-1">
+              <a class="link h5" href="../index.html">Inicio</a>
+            </li>
+          </ul>
+          <div class="container py-4 col-6 col-xs-12 d-flex flex-column justify-content-center align-items-center text-center">
+            <p class="h4 text-center"><u class="m-1">Horarios labolares:</u></p>
+            <p class="m-1 h5">Cuando nos pinta</p>
+            <p class="h4 text-center"><u class="m-1">Ubicacion:</u></p>
+            <p class="m-1 h5">Barrio de Nueva Pompeya</p>
+          </div>
+        </div>
+        <div class="redes container d-flex flex-row col-12 col-sm-6 mt-1">
+          <p class="m-1">Cerveza Esencia - Todos los derechos reservados</p>
+          <a href=""><img class="imgRedes" src="../img/whatsapp.png" alt="whatsapp"></a>
+          <a href=""><img class="imgRedes" src="../img/instagram.png" alt="instagram"></a>
+          <a href=""><img class="imgRedes" src="../img/facebook.png" alt="facebook"></a>
+        </div>
+      </div> 
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <header>
-        <nav>
-            <a href="../index.html">
-                <img class="logo" src="../img/Escencia01.png" alt="" height="60" width="57">
-            </a>
-            <ul class="navBar">
-                <li><a href="cervezas.html">Cervezas</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section>
-        <h1>CONTACTOS</h1>
-    </section>
-
-    <section>
-        <article>
-            <form action="#">
-                <span>Nombre:</span>
-                <input type="text" placeholder="Nombre" name="name" autocomplete="name" required><br>
-                <span>Apellido:</span>
-                <input type="text" placeholder="Apellido" name="surname" autocomplete="surname" required><br>
-                <label for="email">Email:
-                    <input type="email" placeholder="Escribí tu email" name="email" required><br>
-                </label><br>
-                <label for="acepta" aria-required="">¿Sos mayor de 18 años?
-                    <input type="checkbox" id="acepta" name="acepta" value="1">
-                </label><br>
-                <span>¿Que birra vas a pedir?</span>
-                <select name="cervezas" id="">
-                    <option value="Roja">Roja</option>
-                    <option value="Negra">Negra</option>
-                    <option value="Rubia">Rubia</option>
-                </select><br>
-                <span>¿Cuantas birras vas a pedir?</span>
-                <input type="number">
-                <detailist id="number">
-                    <option value="1"></option>
-                    <option value="2"></option>
-                    <option value="3"></option>
-                    <option value="4"></option>
-                    <option value="5"></option>
-                    <option value="6"></option>
-                </detailist><br>
-                <span>Entrega:</span>
-                <label for="domicilio">Domicilio</label>
-                <input type="radio" id="domicilio" name="entrega" value="domicilio">
-                <label for="retira por fabrica">Retira por fabrica</label>
-                <input type="radio" id="retira por fabrica" name="entrega" value="retira por fabrica"><br>
-                <label for="Observaciones">Observaciones</label><br>
-                  <textarea placeholder="Observaciones"></textarea>
-                </label><br>
-                <input type="submit" value="PASAR INFO">
-                <input type="reset" value="RESETEAR">
-
-            </form>
-        </article>
-
-
-
-    </section> -->
-
-    <!-- <footer>
-      <div class="footer">
-          <h3>Horarios labolares:</h3>
-          <span class="pie">Cuando nos pinta</span>
-          <h3>Ubicacion:</h3>
-          <span class="pie">Barrio de Nueva Pompeya</span>
-          <p class="pie">Cerveza Esencia - Todos los derechos reservados</p>
-      </div>
-  </footer>
-  <div class="inicioPie">
-      <a href="index.html">
-      <img class="logo" src="./img/Escencia01.png" alt="" height="60" width="57">
-      </a>
-  </div>  -->
-  
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     
