@@ -18,10 +18,6 @@ h3 {
   margin: 0%;
 }
 
-nav {
-  background-color: darkred;
-}
-
 .navbar-nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -38,29 +34,19 @@ nav {
   color: darkred;
 }
 
-body {
-  background-color: goldenrod;
-}
-
 .header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: header;
 }
 
 .footer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
   grid-area: footer;
 }
 
 .main {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: main;
 }
 
@@ -72,47 +58,68 @@ body {
   grid-area: lema;
 }
 
-.link {
+footer {
+  background-color: black;
+  font-size: .9em;
+}
+
+footer .link {
   text-decoration: none;
-  color: darkslateblue;
+  color: darkgoldenrod;
   -webkit-transition: all .7;
   transition: all .7;
 }
 
-.link:hover {
-  color: blueviolet;
-}
-
-.m-1 {
-  color: darkslateblue;
-}
-
-footer {
-  background-color: black;
+footer .link:hover {
+  color: crimson;
 }
 
 footer .row {
   border-bottom: 1px solid gray;
 }
 
-footer .row u {
-  color: deepskyblue;
+footer .row span {
+  color: darkgoldenrod;
 }
 
-.redes {
+footer .row h6 {
+  color: crimson;
+}
+
+footer .redes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.redes img {
+footer .redes .derechos {
+  text-align: center;
+  margin-top: .2em;
+  margin-bottom: .2em;
+  color: cornsilk;
+}
+
+footer .redes .linkRedes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .redes img {
   height: 25px;
   width: 25px;
   margin: 7px;
@@ -122,22 +129,13 @@ footer .row u {
           transition-duration: .20s;
 }
 
-.redes img:hover {
+footer .redes img:hover {
   height: 35px;
   width: 35px;
   margin: 0;
 }
 
-@media screen and (min-width: 768px) {
-  .birraRubia {
-    grid-area: birraRubia;
-  }
-  .birraRoja {
-    grid-area: birraRoja;
-  }
-  .birraNegra {
-    grid-area: birraNegra;
-  }
+@media (min-width: 768px) {
   .navbar-brand {
     margin-right: 0;
     padding: 1em;
@@ -150,12 +148,23 @@ footer .row u {
     background-color: black;
     color: darkred;
   }
+  .redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .redes .derechos {
+    font-size: 1.3em;
+  }
 }
 
 @media (min-width: 1024px) {
-  body {
-    background-color: rgba(75, 2, 20, 0.747);
-  }
   .nav-link {
     padding: 0.5em 1em;
     font-size: 1.4em;
@@ -163,186 +172,35 @@ footer .row u {
 }
 
 .body {
-  display: -ms-grid;
-  display: grid;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-      grid-template-areas: "header" "main" "footer";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 600px;
+  width: 100%;
+  background-image: url(../img/fondoindexmobile.png);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-attachment: local;
+  background-repeat: no-repeat;
 }
 
-.body .main {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  height: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 15px;
+.body section {
+  min-height: 100vh;
 }
 
-.body .main .esencia {
-  color: gold;
-  background-color: red;
-  padding: 80px;
-  border-style: groove;
-  border-color: gold;
-  justify-items: center;
-  margin: 10px;
-  text-transform: uppercase;
+.body footer {
+  margin-top: auto;
 }
 
-.body .main .lema {
-  color: black;
-  background-color: red;
-  padding: 20px;
-  border: 2px solid black;
-}
-
-.body .main .sectionMain {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  justify-items: center;
-  gap: 15px;
-  margin-top: 15px;
-}
-
-.body .main .sectionMain .logoBirras, .body .main .sectionMain .sub, .body .main .sectionMain .sub1, .body .main .sectionMain .sub2 {
-  font-style: italic;
-  padding: 30px;
-  border: 5px solid black;
-}
-
-.body .main .sectionMain .sub {
-  color: goldenrod;
-  background-color: darkred;
-}
-
-.body .main .sectionMain .sub1 {
-  color: darkred;
-  background-color: black;
-}
-
-.body .main .sectionMain .sub2 {
-  color: black;
-  background-color: darkred;
-}
-
-.body .main .sectionMain .imagenBirra {
-  height: 380px;
-  width: 230px;
-  border: black double;
-  margin-top: 15px;
-}
-
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .body {
-    display: -ms-grid;
-    display: grid;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    gap: 20px;
-  }
-  .body .main {
-    display: -ms-grid;
-    display: grid;
-    height: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 15px;
-  }
-  .body .main .sectionMain {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "birraRubia birraRoja birraNegra";
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    justify-items: center;
-    gap: 15px;
-    margin-top: 15px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .sectionMain {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "birraRubia birraRoja birraNegra";
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    justify-items: center;
-    gap: 15px;
-    margin-top: 15px;
-  }
-  .sectionMain .imagenBirra {
-    height: 50vw;
-    width: 30vw;
-    border: black;
-    margin-top: 15px;
-  }
-  .logoMain {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "esencia lema";
-  }
-  .logoMain .lema {
-    color: black;
-    background-color: red;
-    height: auto;
-    border: 2px solid black;
-    margin: 10px;
-    padding: 80px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    justify-items: center;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  .logoMain .esencia {
-    color: gold;
-    background-color: red;
-    height: auto;
-    border-style: groove;
-    border-color: gold;
-    justify-items: center;
-    margin: 10px;
-    text-transform: uppercase;
+    height: 1800px;
+    background-image: url(../img/fondoindex.png);
+    background-size: 100% 100%;
   }
 }
 

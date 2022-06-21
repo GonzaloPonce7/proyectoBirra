@@ -15,9 +15,6 @@ $titles: (
     margin:0%
 }
 
-nav{
-    background-color: $backnav;
-    }
 
     .navbar-nav{
         align-items: center;
@@ -30,12 +27,6 @@ nav{
         }
     }
 
-
-
-
-body{
-    background-color: goldenrod;
-}
 
 .header{
     display: grid;
@@ -55,60 +46,62 @@ body{
     grid-area: lema;
 }
 
-.link{
-    text-decoration: none;
-    color: darkslateblue;
-    transition: all .7;
-        &:hover{
-            color: blueviolet;
-        }
-}
-.m-1{
-    color: darkslateblue;
-}
-
 
 footer{
     background-color: black;
+    font-size: .9em;
+    .link{
+    text-decoration: none;
+        color: darkgoldenrod;
+        transition: all .7;
+            &:hover{
+                color: crimson;
+            }
+    }
     .row{
         border-bottom: 1px solid gray;
-        u{
-            color: deepskyblue;
+        span{
+            color: darkgoldenrod;
+        }
+        h6{
+            color: crimson;
         }
     }
+    .redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .derechos{
+            text-align: center;
+            margin-top: .2em;
+            margin-bottom: .2em;
+            color: cornsilk;
+        }
+        .linkRedes{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        img{
+            height: 25px;
+            width: 25px;
+            margin: 7px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition-duration: .20s;
+            &:hover{
+                height: 35px;
+                width: 35px;
+                margin: 0;
+            }
+        }
+    } 
 }
 
 
-.redes {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    img{
-        height: 25px;
-        width: 25px;
-        margin: 7px;
-        text-decoration: none;
-        font-size: 1rem;
-        transition-duration: .20s;
-        &:hover{
-            height: 35px;
-            width: 35px;
-            margin: 0;
-        }
-    }
-} 
 
-@media screen and (min-width:768px){
+@media (min-width:768px){
 
-    .birraRubia{
-        grid-area: birraRubia;
-    }
-    .birraRoja{
-        grid-area: birraRoja;
-    }
-    .birraNegra{
-        grid-area: birraNegra;
-    }
 
     .navbar-brand{
         margin-right: 0;
@@ -123,21 +116,21 @@ footer{
         }
     }
 
-    // .row{
-    //     display: flex;
-    //     justify-content: center;
-    //     flex-direction: row;
-    // }
+    .redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .derechos{
+            font-size: 1.3em;
+        }
+    }
 
 } 
 
 
 @media (min-width: 1024px) {
 
-    body{
-        background-color: $fondo;
-        
-    }
+
 
     .nav-link{
         padding: 0.5em 1em;

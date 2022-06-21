@@ -1,163 +1,35 @@
-.body{
-    display: grid;
-    height: fit-content;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-
-    .main{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        height: auto;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-
-        .esencia{
-            color: gold;
-            background-color: red;
-            padding: 80px;  
-            border-style: groove;
-            border-color: gold;
-            justify-items: center;
-            margin: 10px;
-            text-transform: uppercase;
-        } 
-
-        .lema{
-            color: black;
-            background-color: red;
-            padding: 20px;
-            border: 2px solid black;
-        }
-        
-
-
-        .sectionMain{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
-            justify-content: center;
-            justify-items: center;
-            gap: 15px;
-            margin-top: 15px;
-
-            .logoBirras{
-                font-style: italic;
-                padding: 30px;
-                border: 5px solid black;
-            }
-
-            .sub{
-                color: goldenrod;
-                background-color: darkred;
-                @extend.logoBirras
-            }
-            
-            .sub1{
-                color: darkred;
-                background-color: black;
-                @extend.logoBirras
-            }
-            
-            .sub2{
-                color:black;
-                background-color: darkred;
-                @extend.logoBirras
-            }
-
-            @mixin size ($width, $height) {
-                height: $height;
-                width: $width;
-            }
-
-            .imagenBirra {
-                @include size (230px, 380px);
-                border: black double;
-                margin-top: 15px;
-            }
-        }
-    }
-}
-
-@media screen and (min-width:768px){
-
-    .body{
-        display: grid;
-        height: fit-content;
-        gap: 20px;
-        .main{
-            display: grid;
-            height: auto;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-            .sectionMain{
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 1fr;
-                grid-template-areas: 
-                "birraRubia birraRoja birraNegra";
-                justify-content: center;
-                justify-items: center;
-                gap: 15px;
-                margin-top: 15px;
-            }
-        }
-    }
-}
-
-@media (min-width: 1024px) {
-
-    .sectionMain{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "birraRubia birraRoja birraNegra";
-        justify-content: center;
-        justify-items: center;
-        gap: 15px;
-        margin-top: 15px;
+.body {
+    display: flex;
+    flex-direction: column;
+    // grid-template-rows: auto 1fr auto;
+    // grid-template-areas: 
+    // "header"
+    // "main"
+    // "footer";
+    // position: absolute;
+    height: 600px;
+    width: 100%;
+    background-image: url(../img/fondoindexmobile.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: local;
+    background-repeat: no-repeat;
     
-            .imagenBirra{
-                height: 50vw;
-                width: 30vw;
-                border: black;
-                margin-top: 15px;
-            }
-        }
-    .logoMain{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "esencia lema";
 
-        .lema{
-            color: black;
-            background-color: red;
-            height: auto;
-            border: 2px solid black;
-            margin: 10px;
-            padding: 80px;
-            align-items: center;
-            align-content: center;
-            justify-items: center;
-            text-align: center;
-            text-transform: uppercase;
-        }
 
-        .esencia{
-            color: gold;
-            background-color: red;
-            height: auto;  
-            border-style: groove;
-            border-color: gold;
-            justify-items: center;
-            margin: 10px;
-            text-transform: uppercase;
-        } 
+    section{
+        min-height: 100vh;
+    }
+
+    footer{
+        margin-top: auto;
+    }
+}
+
+@media (min-width:768px){
+    .body{
+        height: 1800px;
+        background-image: url(../img/fondoindex.png);
+        background-size: 100% 100%;
     }
 }
