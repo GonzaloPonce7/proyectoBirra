@@ -1,13 +1,7 @@
 .body {
     display: flex;
     flex-direction: column;
-    // grid-template-rows: auto 1fr auto;
-    // grid-template-areas: 
-    // "header"
-    // "main"
-    // "footer";
-    // position: absolute;
-    height: 600px;
+    height: 590px;
     width: 100%;
     background-image: url(../img/fondoindexmobile.png);
     background-size: 100% 100%;
@@ -15,21 +9,184 @@
     background-attachment: local;
     background-repeat: no-repeat;
     
-
-
-    section{
-        min-height: 100vh;
+    h1{
+        font-family: $fuente;
+        font-size: 2em;
+        font-weight: 500;
+        position: relative;
+        width: fit-content;
+        left: 26%;
+        bottom: -24%;
+        color: whitesmoke;
+        z-index: 1;
+        &::after{
+            content: '';
+            background-color: darkgoldenrod;
+            position: absolute;
+            height: 49%;
+            width: 30%;
+            top: 2rem;
+            right: -.2rem;
+            z-index: -1;
+            box-shadow: inset -15px 0 10px -10px black;
+        }
+        &::before{
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            text-align: center;
+            font: var(--fa-font-solid);
+            content: "\f005";
+            color: gold;
+            display: block;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased
+        }
     }
 
-    footer{
-        margin-top: auto;
+    .contenido{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        width: fit-content;
+        left: 35%;
+        bottom: -23%;
+        font-size: 0.9em;
+        a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: whitesmoke;
+            font-family: $fuente2;
+            font-size: 1.2em;
+            padding: .2em;
+            position: relative;
+            width: fit-content;
+            transition: all 300ms ease-in;
+            &::after{
+                font-family: "Font Awesome 6 Free";
+                font-weight: 900;
+                color: goldenrod;
+                font: var(--fa-font-solid);
+                content: "\f0fc";
+                display: inline-block;
+                text-rendering: auto;
+                margin-left: 2px;
+                -webkit-font-smoothing: antialiased
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 5px;
+                width: 97%;
+                height: 2px;
+                background: gold;
+                transform: scaleX(0.2);
+                transform-origin: left;
+                transition: all 300ms ease-in;
+                }
+            &:hover{
+                color: gold;
+                &::before{
+                    transform: scaleX(1);
+                    transform-origin: right;
+                    }
+            }
+        }
+    }
+
+    h3{
+        font-family: $fuente;
+        position: relative;
+        text-align: center;
+        top: 35%;
+        font-size: 1.5em;
     }
 }
 
-@media (min-width:768px){
+@media (min-width: 576px){
+    .body{
+        height: 700px; 
+        background-image: url(../img/fondoindexmedio.png);
+
+        h1{
+            font-size: 3em;
+            font-weight: 600;
+            left: 26%;
+            bottom: -23%;
+            &::after{
+                top: 3rem;
+            }
+        }
+
+        .contenido{
+            left: 35%;
+            bottom: -23%;
+            font-size: 1.2em;
+        }
+
+        h3{
+            top: 33%;
+            font-size: 2.5em;
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .body{
+        height: 900px;
+        background-image: url(../img/fondoindextablet.png);
+        background-size: 100% 100%;
+
+        h1{
+            font-size: 4em;
+            font-weight: 700;
+            left: 26%;
+            bottom: -21%;
+            &::after{
+                top: 4rem;
+            }
+        }
+
+        .contenido{
+            left: 35%;
+            bottom: -21%;
+            font-size: 1.7em;
+        }
+
+        h3{
+            top: 28%;
+            font-size: 3em;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
     .body{
         height: 1800px;
         background-image: url(../img/fondoindex.png);
-        background-size: 100% 100%;
+
+        h1{
+            font-size: 4.7em;
+            font-weight: 700;
+            left: 26%;
+            bottom: -35%;
+            &::after{
+                top: 4.7rem;
+            }
+        }
+
+        .contenido{
+            left: 35%;
+            bottom: -37%;
+            font-size: 2.5em;
+        }
+
+        h3{
+            top: 52%;
+            font-size: 4em;
+        }
     }
+    
 }

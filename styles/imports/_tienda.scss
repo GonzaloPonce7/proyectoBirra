@@ -1,0 +1,86 @@
+.bodyBirra{
+    h1{
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    min-width: fit-content;
+    .imagenesTienda{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        gap: 10px;
+        grid-auto-flow: dense;
+        .imgTienda{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .imgItem{
+            cursor: pointer;
+            background-color: rgba(27, 9, 13, 0.466);
+        }
+        .gatita{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        h2{
+            font-family: $fuente;
+            position: absolute;
+            top: 5px;
+            font-size: 1.2rem;
+            color: whitesmoke;
+        }
+    }
+
+}
+
+@media (min-width: 576px){
+    .gatita{
+        grid-column: span 2;
+    }
+    .barriles{
+        grid-row: span 2;
+    }
+    .remera{
+        grid-row: span 2;
+    }
+    .dragon{
+        grid-column: span 2;
+    }
+    .bodyBirra{
+        .imagenesTienda{
+            h2{
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .apollo{
+        grid-column: span 2;
+    }
+    .barry{
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+}
+
+@media (min-width: 1024px){
+    .dragon{
+        grid-column: span 3;
+        grid-row: span 2;
+    }
+    .gatita{
+        grid-column: span 3;
+        grid-row: span 2;
+    }
+    .mano{
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+}  

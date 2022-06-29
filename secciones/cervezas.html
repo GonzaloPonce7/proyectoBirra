@@ -10,77 +10,225 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/40ed125e2e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@500&family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../estilos/estilos.css">
     <title>Nuestras Birras</title>  
 </head>
 <body>
 
-    <nav  class="navbar navbar-expand-md" style="width: auto;">
-        <div class="container-fluid">
-          <a class="navbar-brand d-lg-none d-md-none" href="../index.html">
-              <img src="../img/Escencia01.png" class="mh-100" alt="" style="width:80px; height: 90px;">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="tienda.html">Tienda</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="nosotros.html">Nosotros</a>
-                </li>
-                <a class="navbar-brand d-none d-md-block d-lg-block" href="../index.html">
-                  <img src="../img/Escencia01.png" class="mh-100" alt="" style="width:80px; height: 90px;">
-                </a>
-                <li class="nav-item">
-                  <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="cervezas.html">Cervezas</a>
-                </li>
-            </ul>
-          </div>
+  <nav class="navbar navbar-expand-md navbar-dark" style="width: auto;">
+    <div class="container-fluid">
+      <a class="navbar-brand d-lg-none d-md-none" href="../index.html">
+        <img src="../img/Escencia01.png" class="mh-100" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Esencia</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-    </nav>
-
-    <div class="container">
-        <H1 class="display-3 mt-3">Nuestros Estilos</H1>
-    </div>
-    
-    <div id="carouselExampleFade" class="carousel slide carousel-dark carousel-faded container" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/birra rubia.jpg" class="img-fluid d-block w-100" alt="primeraImagen">
-            <div class="carousel-caption d-none d-md-block">
-                <h4>LEJANAS TIERRAS</h4>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./img/birra roja.jpg" class="img-fluid d-block w-100" alt="segundaImagen">
-            <div class="carousel-caption d-none d-md-block">
-                <h4>DRAGO</h4>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./img/birra negra.jpg" class="img-fluid d-block w-100" alt="terceraImagen">
-            <div class="carousel-caption d-none d-md-block">
-                <h4>LARRY GUAITS</h4>
-            </div>
-          </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-evenly flex-grow-1">
+            <li class="nav-item">
+              <a class="nav-link" href="tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <a class="navbar-brand d-none d-md-block d-lg-block" href="../index.html">
+              <img src="../img/Escencia01.png" class="mh-100" alt="">
+            </a>            
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cervezas.html">Cervezas</a>
+            </li>
+          </ul>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-
     </div>
+  </nav>
+
+  <div class="bodyBirra">
+
+    
+    <div class="contenedorBirra">
+
+      <H1>Nuestros Estilos</H1>
+      
+      <img class="imgXs" src="../img/Dragon.png" alt="">
+      <button class="btn btn-primary d-lg-none d-md-none d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop1" aria-controls="offcanvasTop">Drago</button>
+      <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop1" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+          <h2 id="offcanvasTopLabel">Drago</h2>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="canvas">
+            <div class="birraDetalles">
+              <P>Una cerveza amarga, expresa y siberiana con el deber de quebrarte. 
+                Roja como su bandera, es una cerveza de porte cremoso e intenso sabor</P>
+              </div>
+              <div class="birraDescripcion">
+                <span class="alc">5.2% ALC</span>
+                <span class="ibu">80 IBU</span>
+              </div>
+              <img class="imgBirra" src="../img/birraroja.png" alt="">
+            </div>
+          </div>
+        </div>
+        
+    <div class="drago">
+      <div class="etiqueta">
+        <img src="../img/Dragon.png" alt="">
+      </div>
+      <div class="wrapB">
+        <div class="birraDetalles">
+          <h2>Drago</h2>
+          <P>Una cerveza amarga, expresa y siberiana con el deber de quebrarte. 
+            Roja como su bandera, es una cerveza de porte cremoso e intenso sabor</P>
+            <div class="birraDescripcion">
+              <span class="alc">5.2% ALC</span>
+              <span class="ibu">80 IBU</span>
+            </div>
+          </div>
+          <img class="imgBirra" src="../img/birraroja.png" alt="">
+      </div>
+    </div>
+      
+      <img class="imgXs" src="../img/Ricknegro.jpg" alt="">
+      <button class="btn btn-primary d-lg-none d-md-none d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop2" aria-controls="offcanvasTop">Ahora Con Trigo</button>
+      <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop2" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+          <h2 id="offcanvasTopLabel">Ahora con trigo</h2>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="canvas">
+            <div class="birraDetalles">
+            <p>Claramente ahora tiene trigo, amarga como mate a la mañana y de cuerpo no ligero.
+              A diferencia de otras cervezas de trigo, esta ta buena.</p>
+            </div>
+            <div class="birraDescripcion">
+                <span class="alc">4% ALC</span>
+                <span class="ibu">69 IBU</span>
+            </div>
+            <img class="imgBirra" src="../img/birratrigo.png" alt="">
+          </div>
+        </div>
+      </div>
+    
+    <div class="ahoraConTrigo">
+      <div class="etiqueta">
+        <img src="../img/Ricknegro.jpg" alt="">
+      </div>
+      <div class="wrapB">
+        <div class="birraDetalles">
+          <h2>Ahora con Trigo</h2>
+          <p>Claramente ahora tiene trigo, amarga como mate a la mañana y de cuerpo no ligero.
+            A diferencia de otras cervezas de trigo, esta ta buena.</p>
+          <div class="birraDescripcion">
+            <span class="alc">4% ALC</span>
+            <span class="ibu">69 IBU</span>
+          </div>
+        </div>
+        <img class="imgBirra" src="../img/birratrigo.png" alt="">
+      </div>
+    </div>
+
+    <img class="imgXs" src="../img/Apollocafe.png" alt="">
+    <button class="btn btn-primary d-lg-none d-md-none d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop3" aria-controls="offcanvasTop">Apollo</button>
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop3" aria-labelledby="offcanvasTopLabel">
+          <div class="offcanvas-header">
+            <h2 id="offcanvasTopLabel">Apollo</h2>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="canvas">
+              <div class="birraDetalles">
+                <p>Cerveza negra de caramelo, suave licor dulce tormento. 
+                  Su cuerpo es ligero y su graduacion alcoholica es digna de un principe de las piñas.</p>
+                </div>
+                <div class="birraDescripcion">
+                  <span class="alc">4.7% ALC</span>
+                  <span class="ibu">42 IBU</span>
+                </div>
+                <img class="imgBirra" src="../img/birranegra.png" alt="">
+              </div>
+            </div>
+          </div>
+          
+    <div class="apollo">
+      <div class="etiqueta">
+        <img src="../img/Apollocafe.png" alt="">
+      </div>
+      <div class="wrapB">
+        <div class="birraDetalles">
+          <h2>Apollo</h2>
+          <p>Cerveza negra de caramelo, suave licor dulce tormento. 
+            Su cuerpo es ligero y su graduacion alcoholica es digna de un principe de las piñas.</p>
+          <div class="birraDescripcion">
+            <span class="alc">4.7% ALC</span>
+            <span class="ibu">42 IBU</span>
+          </div>
+        </div>
+        <img class="imgBirra" src="../img/birranegra.png" alt="">
+      </div>
+    </div>
+
+    <img class="imgXs" src="../img/barry.png" alt="">
+    <button class="btn btn-primary d-lg-none d-md-none d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop4" aria-controls="offcanvasTop">LSB</button>
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop4" aria-labelledby="offcanvasTopLabel">
+          <div class="offcanvas-header">
+            <h2 id="offcanvasTopLabel">Larry Super Black</h2>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="canvas">
+              <div class="birraDetalles">
+                <p>Espesa, sensual con cuerpo grueso y aterciopelado. Estribillos subidores como el cafe que contiene.
+                  Una cerveza que sabe como se llama.</p>
+                </div>
+                <div class="birraDescripcion">
+                  <span class="alc">5% ALC</span>
+                  <span class="ibu">29 IBU</span>
+                </div>
+                <img class="imgBirra" src="../img/birranegra.png" alt="">
+              </div>
+          </div>
+        </div>
+          
+          
+    <div class="larrySuperBlack">
+      <div class="etiqueta">
+        <img src="../img/barry.png" alt="">
+      </div>
+      <div class="wrapB">
+        <div class="birraDetalles">
+          <h2>Larry Super Black</h2>
+          <p>Espesa, sensual con cuerpo grueso y aterciopelado. Estribillos subidores como el cafe que contiene.
+            Una cerveza que sabe como se llama.</p>
+          <div class="birraDescripcion">
+            <span class="alc">5% ALC</span>
+            <span class="ibu">29 IBU</span>
+          </div>
+          </div>
+          <img class="imgBirra" src="../img/birranegra.png" alt="">
+      </div>
+    </div>
+        
+    </div>
+  </div>
+
+    
     <footer class="site-footer">
       <div class="container">
         <div class="row">
@@ -118,45 +266,6 @@
         </div>
       </div> 
     </footer>
-
-
-
-
-
-    <!-- <div class="mainC">
-        <div class="titulo"><h1>Algunas de nuestras cervezas</h1></div>
-        <div class="laRubia">
-            <h2>Rubia:</h2>
-            <h3>Lejanas Tierras</h3>
-            <img data-aos="fade-up" data-aos-duration="3000" class="imagenBirra" src="../img/birra rubia.jpg" alt="">
-        </div>
-        <div class="descripcionTierras">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora eligendi ullam reiciendis, sit a perferendis nisi harum eveniet voluptas, autem illum quod laudantium, aliquam nihil sed quis ipsam eos totam.</p>
-        </div>
-
-        <div class="laRoja">
-            <h2>Roja:</h2>
-            <h3>Drago</h3>
-            <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="imagenBirra" src="../img/birra roja.jpg" alt="">
-        </div>
-        <div class="descripcionDrago">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quisquam iusto fugiat pariatur, velit quia ullam voluptates optio obcaecati facere quos id quasi tempore consequatur, quaerat consequuntur eos et! Nobis!</p>
-        </div>
-
-        <div class="laNegra">
-            <h2>Negra:</h2>
-            <h3>Larry Guaits</h3>
-            <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="imagenBirra" src="../img/birra negra.jpg" alt="">
-        </div>
-        <div class="descripcionLarry">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae asperiores itaque excepturi ducimus officiis nisi consectetur, culpa voluptatum voluptates saepe maiores commodi laudantium alias numquam iure! Saepe obcaecati delectus officiis.</p>
-        </div>
-
-        <div class="parrafito">
-            <p>Todas nuestras cervezas se fabrican en la calidez de un hogar, el compromiso de una amistad y con el control de calidad digno de años y años de experiencia. Hecha y perfeccionada para autoabastecimiento, y por consiguiente, abrir la experiencia a quien quiera disfrutar de una birra hecha con amor.</p>
-        </div>
-    </div> -->
-
 
 
     <script>

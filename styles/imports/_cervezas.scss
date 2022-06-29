@@ -1,11 +1,220 @@
+nav{
+    background-image: linear-gradient(rgba(102, 7, 7, 0.726) 85%,rgba(14, 9, 9, 0.849));
+    width: 100%;
+}
+.bodyBirra{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $fondo;
+    &::before{
+        content: '';
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        width: 100vw;
+        background-image: url(../img/fondoindexmobile.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        opacity: 0.5;
+        z-index: -1;
+    }
 
-        .carousel-inner img{
-            max-height: 900px;
+    h1{
+        color: whitesmoke;
+        font-family: $fuente;
+        font-weight: 500;
+        opacity: 1;
+        margin: 0.5rem 0 0.5rem;
+        font-size: 2em;
+    }
+    .contenedorBirra{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .imgXs{
+            width: 100vw;
+            padding-top: 1rem;
+            padding-bottom: 0.5rem;
         }
-@media (min-width:768px){
+        .imgBirra {
+            height: 18em;
+            margin-right: 1rem;
+            
+        }
+        .btn-primary{
+            color: black;
+            background-color: darkred;
+            border-color: crimson;
+            width: 10rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid gray;
+        }
+        .offcanvas-top{
+            max-height: 95%;
+            height: auto;
+        }
+        .offcanvas-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5rem 1rem;
+        }
+        .offcanvas-body{
+            padding: 0.3rem;
+        }
+        .canvas{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-family: $fuente2;
+
+            .birraDetalles{
+                p{
+                    margin-bottom: 00.3rem;
+                }
+            }
+            .birraDescripcion{
+                display: flex;
+                flex-direction: column;
+                font-size: larger;
+            }
+        }
+        .drago{
+            display: none;
+        }
+        .ahoraConTrigo{
+            display: none;
+        }
+        .apollo{
+            display: none;
+        }
+        .larrySuperBlack{
+            display: none;
+        }
+    }
 
 }
 
+@media (min-width: 576px){
+    .bodyBirra{
+        &::before{
+            background-image: url(../img/fondoindexmedio.png);
+            background-position: top;
+        }
+        h1{
+            font-size: 3em;
+        }
+        .imgXs{
+            display: none;
+        }
+        .etiqueta{
+                width: -webkit-fill-available;
+            img{
+                width: 100vw;
+            };
+        }
+        .wrapB{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+        .contenedorBirra{
+            h2{
+                color: whitesmoke;
+                font-family: $fuente
+            }
+            span{
+                color: whitesmoke;
+                font-family: $fuente;
+                font-size: 1.5em;
+            }
+            p{
+                color: whitesmoke;
+                font-family: $fuente2;
+                font-size: 1.2em;
+            }
+            .drago{
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: rgba(110, 50, 15, 0.637);
+                margin: 1.5em 0 4em;
+            }
+            .ahoraConTrigo{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: rgba(81, 87, 14, 0.623);
+                margin: 4em 0 4em;
+            }
+            .apollo{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: whitesmoke;
+                background-color: rgba(34, 34, 28, 0.774);
+                margin: 4em 0 4em;
+                
+            }
+            .larrySuperBlack{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: whitesmoke;
+                background-color: rgba(0, 0, 0, 0.692);
+                margin: 4em 0 0;
+            }
+        }
+    }
+}
+
+@media (min-width:768px){
+    .bodyBirra{
+        &::before{
+            background-image: url(../img/fondoindextablet.png);
+        }
+        h1{
+            font-size: 3.5em;
+        }
+    }
+}
+
 @media (min-width: 1024px) {
+    .bodyBirra{
+        &::before{
+            background-image: url(../img/fondoindex.png);
+        }
+        h1{
+            font-size: 4em;
+        }
+        .birraDetalles{
+            p{
+                margin-bottom: 00.3rem;
+                margin-right: 1rem;
+            }
+        }
+        .etiqueta{
+            width: -webkit-fill-available;
+            display: flex;
+            justify-content: center;
+            img{
+                width: 75vw;
+                height: 110vh;
+            }
+        }
+        .contenedorBirra{
+            .imgBirra {
+                margin-right: 2rem;
+                margin-left: 3rem; 
+            }
+        }
+    }
 
 }

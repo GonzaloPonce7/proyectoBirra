@@ -1,6 +1,12 @@
+*{  
+    box-sizing: border-box;
+    padding: 0%;
+    margin:0%
+}
+
 $titles: (
-    h1: 4em,
-    h2: 3em,
+    h1: 3em,
+    h2: 2.5em,
     h3: 2em
 );
 @each $heading, $size in $titles {
@@ -9,13 +15,20 @@ $titles: (
     }
 }
 
-*{  
-    box-sizing: border-box;
-    padding: 0%;
-    margin:0%
+.offcanvas{
+    background-color:rgb(226, 58, 45);
+    opacity: 0.9;
 }
 
+.offcanvas-start{
+    width: 190px;
+}
 
+.navbar-dark{
+    img{
+        height: 80px;
+        width: 70px;
+    }
     .navbar-nav{
         align-items: center;
         .nav-link{
@@ -26,26 +39,7 @@ $titles: (
             }
         }
     }
-
-
-.header{
-    display: grid;
-    grid-area: header;
 }
-.footer{
-    display: grid;
-    grid-area: footer;
-}
-.main{
-    grid-area: main;
-}
-.esencia{
-    grid-area: esencia;
-}
-.lema{
-    grid-area: lema;
-}
-
 
 footer{
     background-color: black;
@@ -59,7 +53,7 @@ footer{
             }
     }
     .row{
-        border-bottom: 1px solid gray;
+        border-bottom: 2px solid gray;
         span{
             color: darkgoldenrod;
         }
@@ -98,24 +92,26 @@ footer{
     } 
 }
 
-
-
 @media (min-width:768px){
-
-
-    .navbar-brand{
-        margin-right: 0;
-        padding: 1em;
-    }
-    .nav-link{
-        font-size: 1.2em;
-        color: goldenrod;
-        &:hover{
-            background-color: black;
-            color: darkred;
+    .navbar-dark{
+        img{
+            height: 100px;
+            width: 90px;
+        }
+        .navbar-brand{
+            margin-right: 0;
+            padding: 1em;
+        }
+        .nav-link{
+            font-size: 1.2em;
+            color: goldenrod;
+            &:hover{
+                background-color: black;
+                color: darkred;
+            }
         }
     }
-
+    
     .redes {
         display: flex;
         flex-direction: row;
@@ -124,17 +120,17 @@ footer{
             font-size: 1.3em;
         }
     }
-
 } 
 
-
 @media (min-width: 1024px) {
-
-
-
-    .nav-link{
-        padding: 0.5em 1em;
-        font-size: 1.4em;
+    .navbar-dark{   
+        img{
+            height: 120px;
+            width: 110px;
         }
-
+        .nav-link{
+            padding: 0.5em 1em;
+            font-size: 1.8em;
+            }
+    }
 }

@@ -1,16 +1,3 @@
-/* siempre arriba de todo colocar las variables $*/
-h1 {
-  font-size: 4em;
-}
-
-h2 {
-  font-size: 3em;
-}
-
-h3 {
-  font-size: 2em;
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -18,44 +5,46 @@ h3 {
   margin: 0%;
 }
 
-.navbar-nav {
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+.offcanvas {
+  background-color: #e23a2d;
+  opacity: 0.9;
+}
+
+.offcanvas-start {
+  width: 190px;
+}
+
+.navbar-dark img {
+  height: 80px;
+  width: 70px;
+}
+
+.navbar-dark .navbar-nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link {
   color: goldenrod;
   -webkit-transition: all .7s;
   transition: all .7s;
 }
 
-.navbar-nav .nav-link:hover {
+.navbar-dark .navbar-nav .nav-link:hover {
   color: darkred;
-}
-
-.header {
-  display: -ms-grid;
-  display: grid;
-  grid-area: header;
-}
-
-.footer {
-  display: -ms-grid;
-  display: grid;
-  grid-area: footer;
-}
-
-.main {
-  grid-area: main;
-}
-
-.esencia {
-  grid-area: esencia;
-}
-
-.lema {
-  grid-area: lema;
 }
 
 footer {
@@ -75,7 +64,7 @@ footer .link:hover {
 }
 
 footer .row {
-  border-bottom: 1px solid gray;
+  border-bottom: 2px solid gray;
 }
 
 footer .row span {
@@ -136,15 +125,19 @@ footer .redes img:hover {
 }
 
 @media (min-width: 768px) {
-  .navbar-brand {
+  .navbar-dark img {
+    height: 100px;
+    width: 90px;
+  }
+  .navbar-dark .navbar-brand {
     margin-right: 0;
     padding: 1em;
   }
-  .nav-link {
+  .navbar-dark .nav-link {
     font-size: 1.2em;
     color: goldenrod;
   }
-  .nav-link:hover {
+  .navbar-dark .nav-link:hover {
     background-color: black;
     color: darkred;
   }
@@ -165,9 +158,13 @@ footer .redes img:hover {
 }
 
 @media (min-width: 1024px) {
-  .nav-link {
+  .navbar-dark img {
+    height: 120px;
+    width: 110px;
+  }
+  .navbar-dark .nav-link {
     padding: 0.5em 1em;
-    font-size: 1.4em;
+    font-size: 1.8em;
   }
 }
 
@@ -179,7 +176,7 @@ footer .redes img:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 600px;
+  height: 590px;
   width: 100%;
   background-image: url(../img/fondoindexmobile.png);
   background-size: 100% 100%;
@@ -188,22 +185,721 @@ footer .redes img:hover {
   background-repeat: no-repeat;
 }
 
-.body section {
-  min-height: 100vh;
+.body h1 {
+  font-family: "Krub", sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  left: 26%;
+  bottom: -24%;
+  color: whitesmoke;
+  z-index: 1;
 }
 
-.body footer {
-  margin-top: auto;
+.body h1::after {
+  content: '';
+  background-color: darkgoldenrod;
+  position: absolute;
+  height: 49%;
+  width: 30%;
+  top: 2rem;
+  right: -.2rem;
+  z-index: -1;
+  -webkit-box-shadow: inset -15px 0 10px -10px black;
+          box-shadow: inset -15px 0 10px -10px black;
+}
+
+.body h1::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  text-align: center;
+  font: var(--fa-font-solid);
+  content: "\f005";
+  color: gold;
+  display: block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.body .contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  left: 35%;
+  bottom: -23%;
+  font-size: 0.9em;
+}
+
+.body .contenido a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2em;
+  padding: .2em;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+.body .contenido a::after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: goldenrod;
+  font: var(--fa-font-solid);
+  content: "\f0fc";
+  display: inline-block;
+  text-rendering: auto;
+  margin-left: 2px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.body .contenido a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 97%;
+  height: 2px;
+  background: gold;
+  -webkit-transform: scaleX(0.2);
+          transform: scaleX(0.2);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+.body .contenido a:hover {
+  color: gold;
+}
+
+.body .contenido a:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.body h3 {
+  font-family: "Krub", sans-serif;
+  position: relative;
+  text-align: center;
+  top: 35%;
+  font-size: 1.5em;
+}
+
+@media (min-width: 576px) {
+  .body {
+    height: 700px;
+    background-image: url(../img/fondoindexmedio.png);
+  }
+  .body h1 {
+    font-size: 3em;
+    font-weight: 600;
+    left: 26%;
+    bottom: -23%;
+  }
+  .body h1::after {
+    top: 3rem;
+  }
+  .body .contenido {
+    left: 35%;
+    bottom: -23%;
+    font-size: 1.2em;
+  }
+  .body h3 {
+    top: 33%;
+    font-size: 2.5em;
+  }
 }
 
 @media (min-width: 768px) {
   .body {
-    height: 1800px;
-    background-image: url(../img/fondoindex.png);
+    height: 900px;
+    background-image: url(../img/fondoindextablet.png);
     background-size: 100% 100%;
+  }
+  .body h1 {
+    font-size: 4em;
+    font-weight: 700;
+    left: 26%;
+    bottom: -21%;
+  }
+  .body h1::after {
+    top: 4rem;
+  }
+  .body .contenido {
+    left: 35%;
+    bottom: -21%;
+    font-size: 1.7em;
+  }
+  .body h3 {
+    top: 28%;
+    font-size: 3em;
   }
 }
 
-.carousel-inner img {
-  max-height: 900px;
+@media (min-width: 1024px) {
+  .body {
+    height: 1800px;
+    background-image: url(../img/fondoindex.png);
+  }
+  .body h1 {
+    font-size: 4.7em;
+    font-weight: 700;
+    left: 26%;
+    bottom: -35%;
+  }
+  .body h1::after {
+    top: 4.7rem;
+  }
+  .body .contenido {
+    left: 35%;
+    bottom: -37%;
+    font-size: 2.5em;
+  }
+  .body h3 {
+    top: 52%;
+    font-size: 4em;
+  }
+}
+
+nav {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(85%, rgba(102, 7, 7, 0.726)), to(rgba(14, 9, 9, 0.849)));
+  background-image: linear-gradient(rgba(102, 7, 7, 0.726) 85%, rgba(14, 9, 9, 0.849));
+  width: 100%;
+}
+
+.bodyBirra {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(46, 19, 19, 0.774);
+}
+
+.bodyBirra::before {
+  content: '';
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  width: 100vw;
+  background-image: url(../img/fondoindexmobile.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.bodyBirra h1 {
+  color: whitesmoke;
+  font-family: "Krub", sans-serif;
+  font-weight: 500;
+  opacity: 1;
+  margin: 0.5rem 0 0.5rem;
+  font-size: 2em;
+}
+
+.bodyBirra .contenedorBirra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bodyBirra .contenedorBirra .imgXs {
+  width: 100vw;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.bodyBirra .contenedorBirra .imgBirra {
+  height: 18em;
+  margin-right: 1rem;
+}
+
+.bodyBirra .contenedorBirra .btn-primary {
+  color: black;
+  background-color: darkred;
+  border-color: crimson;
+  width: 10rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid gray;
+}
+
+.bodyBirra .contenedorBirra .offcanvas-top {
+  max-height: 95%;
+  height: auto;
+}
+
+.bodyBirra .contenedorBirra .offcanvas-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.bodyBirra .contenedorBirra .offcanvas-body {
+  padding: 0.3rem;
+}
+
+.bodyBirra .contenedorBirra .canvas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+.bodyBirra .contenedorBirra .canvas .birraDetalles p {
+  margin-bottom: 00.3rem;
+}
+
+.bodyBirra .contenedorBirra .canvas .birraDescripcion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: larger;
+}
+
+.bodyBirra .contenedorBirra .drago {
+  display: none;
+}
+
+.bodyBirra .contenedorBirra .ahoraConTrigo {
+  display: none;
+}
+
+.bodyBirra .contenedorBirra .apollo {
+  display: none;
+}
+
+.bodyBirra .contenedorBirra .larrySuperBlack {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .bodyBirra::before {
+    background-image: url(../img/fondoindexmedio.png);
+    background-position: top;
+  }
+  .bodyBirra h1 {
+    font-size: 3em;
+  }
+  .bodyBirra .imgXs {
+    display: none;
+  }
+  .bodyBirra .etiqueta {
+    width: -webkit-fill-available;
+  }
+  .bodyBirra .etiqueta img {
+    width: 100vw;
+  }
+  .bodyBirra .wrapB {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bodyBirra .contenedorBirra h2 {
+    color: whitesmoke;
+    font-family: "Krub", sans-serif;
+  }
+  .bodyBirra .contenedorBirra span {
+    color: whitesmoke;
+    font-family: "Krub", sans-serif;
+    font-size: 1.5em;
+  }
+  .bodyBirra .contenedorBirra p {
+    color: whitesmoke;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2em;
+  }
+  .bodyBirra .contenedorBirra .drago {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: rgba(110, 50, 15, 0.637);
+    margin: 1.5em 0 4em;
+  }
+  .bodyBirra .contenedorBirra .ahoraConTrigo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: rgba(81, 87, 14, 0.623);
+    margin: 4em 0 4em;
+  }
+  .bodyBirra .contenedorBirra .apollo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: whitesmoke;
+    background-color: rgba(34, 34, 28, 0.774);
+    margin: 4em 0 4em;
+  }
+  .bodyBirra .contenedorBirra .larrySuperBlack {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.692);
+    margin: 4em 0 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .bodyBirra::before {
+    background-image: url(../img/fondoindextablet.png);
+  }
+  .bodyBirra h1 {
+    font-size: 3.5em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bodyBirra::before {
+    background-image: url(../img/fondoindex.png);
+  }
+  .bodyBirra h1 {
+    font-size: 4em;
+  }
+  .bodyBirra .birraDetalles p {
+    margin-bottom: 00.3rem;
+    margin-right: 1rem;
+  }
+  .bodyBirra .etiqueta {
+    width: -webkit-fill-available;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .bodyBirra .etiqueta img {
+    width: 75vw;
+    height: 110vh;
+  }
+  .bodyBirra .contenedorBirra .imgBirra {
+    margin-right: 2rem;
+    margin-left: 3rem;
+  }
+}
+
+.bodyBirra {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.bodyBirra h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.bodyBirra .imagenesTienda {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 10px;
+  grid-auto-flow: dense;
+}
+
+.bodyBirra .imagenesTienda .imgTienda {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.bodyBirra .imagenesTienda .imgItem {
+  cursor: pointer;
+  background-color: rgba(27, 9, 13, 0.466);
+}
+
+.bodyBirra .imagenesTienda .gatita {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.bodyBirra .imagenesTienda h2 {
+  font-family: "Krub", sans-serif;
+  position: absolute;
+  top: 5px;
+  font-size: 1.2rem;
+  color: whitesmoke;
+}
+
+@media (min-width: 576px) {
+  .gatita {
+    grid-column: span 2;
+  }
+  .barriles {
+    grid-row: span 2;
+  }
+  .remera {
+    grid-row: span 2;
+  }
+  .dragon {
+    grid-column: span 2;
+  }
+  .bodyBirra .imagenesTienda h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .apollo {
+    grid-column: span 2;
+  }
+  .barry {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .dragon {
+    grid-column: span 3;
+    grid-row: span 2;
+  }
+  .gatita {
+    grid-column: span 3;
+    grid-row: span 2;
+  }
+  .mano {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+}
+
+.bodyBirra h1 {
+  padding-top: 3rem;
+  font-weight: 600;
+  font-family: "Krub", sans-serif;
+}
+
+.bodyBirra .cuento {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+}
+
+.bodyBirra .cuento .imagenfondo {
+  position: relative;
+  height: 50vh;
+  background-image: url(../img/chapas.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.bodyBirra .cuento .imagenfondo .titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bodyBirra .cuento .imagenfondo .titulo h2 {
+  font-family: "Krub", sans-serif;
+  font-size: 1.5em;
+  padding-left: 4em;
+  color: #ffc107;
+  font-weight: 600;
+}
+
+.bodyBirra .cuento .descripcion {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bodyBirra .cuento .descripcion img {
+  width: 10rem;
+  height: 15rem;
+}
+
+.bodyBirra .cuento .descripcion p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  color: #b5b5b5;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.bodyBirra .cuento .descripcion .apl img {
+  width: 11rem;
+}
+
+@media (min-width: 576px) {
+  .bodyBirra .cuento .imagenfondo .titulo h2 {
+    font-size: 1.7em;
+  }
+  .bodyBirra .cuento .descripcion {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .bodyBirra .cuento .descripcion p {
+    font-size: 1.1em;
+  }
+  .bodyBirra .cuento .apl {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 768px) {
+  .bodyBirra .cuento .imagenfondo .titulo h2 {
+    font-size: 2.1em;
+  }
+  .bodyBirra .cuento .descripcion p {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bodyBirra .cuento .imagenfondo .titulo h2 {
+    font-size: 2.8em;
+  }
+}
+
+.form-label {
+  color: whitesmoke;
 }
